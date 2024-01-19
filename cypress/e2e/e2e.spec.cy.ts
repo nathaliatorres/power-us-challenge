@@ -12,7 +12,6 @@ describe('Recruiting Bible platform', () => {
     cy.visit('https://testing.powerus.de/');
   })
   it('Employer Registration', () => {
-    cy.wait(2000);
     InitialPage.goToRegistration();
     RegistrationPage.choosePersonalOptions();
     RegistrationPage.fillContactDetails();
