@@ -6,7 +6,7 @@ const RecruitingBiblePage = new recruitingBiblePage();
 const InitialPage = new initialPage();
 const RegistrationPage = new registrationPage();
 
-describe('Recruiting Bible', () => {
+describe('Recruiting Bible platform', () => {
   beforeEach(function() {
     cy.viewport('iphone-xr')
     cy.visit('https://testing.powerus.de/');
