@@ -1,5 +1,5 @@
 describe('API Validation Test', () => {
-    it('should validate phone number', () => {
+    it('Validate phone number', () => {
       const phoneNumber = '030912138';
 
       cy.api({
@@ -14,7 +14,7 @@ describe('API Validation Test', () => {
       });
     });
 
-    it('should handle invalid phone number', () => {
+    it('Handle invalid phone number', () => {
         const phoneNumber = '03091';
 
         cy.api({
@@ -29,7 +29,7 @@ describe('API Validation Test', () => {
         });
       });
       
-        it('should validate email format', () => {
+        it('Validate email format', () => {
           const validEmail = 'test@example.com';
       
           cy.api({
@@ -44,7 +44,7 @@ describe('API Validation Test', () => {
           });
         });
       
-        it('should handle invalid email format', () => {
+        it('Handle invalid email format', () => {
           const invalidEmail = 'invalidemail';
 
           cy.api({
@@ -60,7 +60,7 @@ describe('API Validation Test', () => {
           });
         });
 
-        it('should make a POST request to company contact API', () => {
+        it('Make a POST request to company contact API', () => {
             cy.api({
               method: 'POST',
               url: 'https://api.testing.powerus.de/companies/company-contact',
